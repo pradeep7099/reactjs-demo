@@ -41,4 +41,4 @@ steps:
 
         --account-key \
          swIT79oOFSvL2huMcp30c046Cc/wGKrsp6kWtnmrLAIWmiEmHoSHW2x2tePxSChJ6D1qZZEXmE7C+AStE+a6dg==
-      workingDirectory: $(System.DefaultWorkingDirectory)/$(Build.BuildId)/a/
+      workingDirectory: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)/a/
