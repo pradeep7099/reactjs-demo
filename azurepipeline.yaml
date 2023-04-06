@@ -26,7 +26,7 @@ steps:
   - task: ExtractFiles@1
     displayName: "Extract files "
     inputs:
-      archiveFilePatterns: "**/$(Build.BuildId).zip"
+      archiveFilePatterns: "$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip"
       destinationFolder: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)
   - task: AzureCLI@2
     displayName: "Azure CLI "
