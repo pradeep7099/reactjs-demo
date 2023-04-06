@@ -22,6 +22,7 @@ steps:
   - task: PublishBuildArtifacts@1
     displayName: Publish Artifact
 
+
   - task: ExtractFiles@1
     displayName: "Extract files "
     inputs:
